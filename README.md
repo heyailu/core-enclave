@@ -14,9 +14,11 @@ The core runs in a [Tinfoil Container](https://docs.tinfoil.sh/containers/overvi
 hardware enclave. The enclave can prove which code it is running, and this repository is what that
 proof is checked against.
 
-> **Not running yet.** This repository is being set up ahead of the core's first release. Until
-> `tinfoil-config.yml` is added and a release is published, there is nothing here to verify, and
-> Ailu's chat doesn't run in production.
+> **Not used for now.** To keep hosting to one Tinfoil instance while Ailu is small, the core runs as
+> a second container in the gateway's instance, and is measured and released from
+> [`heyailu/vault-enclave`](https://github.com/heyailu/vault-enclave) along with the gateway (see
+> "One instance" in Ailu's design doc). Check the core there. This repository stays ready for when the
+> core moves to its own instance; until then it has no `tinfoil-config.yml` and no releases.
 
 ## What's here
 
